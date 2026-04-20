@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convite de Aniversário - Júlia Caroline</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Great+Vibes&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Mailbox/Email Screen -->
+    <div id="mailbox-screen">
+        <div class="mailbox-content">
+            <div class="email-icon">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M22 6L12 13L2 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <h2 class="mailbox-text">Você recebeu uma carta</h2>
+            <button id="view-letter-btn" class="btn-mailbox">Ver Carta</button>
+        </div>
+    </div>
+
+    <div class="background-overlay"></div>
+
+    <!-- Screen 1: Envelope -->
+    <div id="envelope-container" class="hidden">
+        <div class="envelope">
+            <div class="flap"></div>
+            <div class="body"></div>
+            <div class="letter"></div>
+            <div class="wax-seal">
+                <span>J</span>
+            </div>
+        </div>
+        <button id="open-invitation" class="btn-premium">Abrir Envelope</button>
+    </div>
+
+    <!-- Screen 2: Invitation Content -->
+    <div id="invitation-content" class="hidden">
+        <div class="invitation-card">
+            <header>
+                <h1 class="main-title">Julia Caroline</h1>
+                <h2 class="sub-title">15 Anos</h2>
+                
+                <!-- Countdown Timer -->
+                <div id="countdown" class="countdown-container">
+                    <div class="countdown-item">
+                        <span id="days" class="number">00</span>
+                        <span class="label">Dias</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="hours" class="number">00</span>
+                        <span class="label">Horas</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="minutes" class="number">00</span>
+                        <span class="label">Min</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="seconds" class="number">00</span>
+                        <span class="label">Seg</span>
+                    </div>
+                </div>
+            </header>
+            
+            <div class="divider"></div>
+            
+            <section class="details">
+                <p class="message">"Uma noite especial está prestes a acontecer… E sua presença tornará tudo ainda mais inesquecível."</p>
+                
+                <div class="info">
+                    <div class="info-item">
+                        <span class="label">Data</span>
+                        <span class="value">04 de Julho de 2026</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Horário</span>
+                        <span class="value">19:00</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Local</span>
+                        <span class="value">Espaço de Eventos Pouso Alegre</span>
+                    </div>
+                </div>
+            </section>
+
+            <div class="divider"></div>
+
+            <section class="gift-suggestions">
+                <h3 class="section-title">Sugestões de Presentes</h3>
+                <ul class="gift-list">
+                    <li>Calçados (36/37)</li>
+                    <li class="small-tag">Perfumes</li>
+                    <li>Roupas (M/38)</li>
+                </ul>
+                <div class="pix-info">
+                    <span class="label">Presente via Pix</span>
+                    <span class="value">068.213.002-83</span>
+                </div>
+            </section>
+
+            <div class="divider"></div>
+
+            <footer>
+                <h3 class="section-title">Confirme sua presença</h3>
+                <div class="rsvp-form">
+                    <input type="text" id="guest-name" placeholder="Seu nome completo" class="rsvp-input">
+                    <input type="number" id="guest-count" placeholder="Número de convidados" class="rsvp-input">
+                    <p class="rsvp-deadline">Por favor, confirme até 21/06</p>
+                    <button class="btn-rsvp">Confirmar Presença</button>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
